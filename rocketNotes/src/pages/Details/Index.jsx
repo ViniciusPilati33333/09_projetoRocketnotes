@@ -4,6 +4,8 @@ import { Header } from '../../components/header'
 import { Button } from '../../components/button'
 import { Section } from '../../components/section'
 import { Tag } from '../../components/tag'
+import { ButtonText } from '../../components/buttonText'
+
 
 
 
@@ -14,6 +16,8 @@ export function Details() {
     <Container> 
 
       <Header />
+
+        <ButtonText title="Excluir Nota"/>
 
         <Section title='Links Uteis'>
             <Links>
