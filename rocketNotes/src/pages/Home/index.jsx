@@ -3,6 +3,8 @@ import { Container, Brand, Menu, Search, Content, NewNote } from './style';
 
 import { Header } from '../../components/header';
 import { Input } from '../../components/input';
+import { Note } from '../../components/note';
+import { Section } from '../../components/section';
 import { ButtonText } from '../../components/buttonText';
 
 
@@ -26,7 +28,18 @@ export function Home() {
                 <Input placeholder="Pesquisar pelo titulo" icon={FiSearch} />
             </Search>
 
-            <Content></Content>
+            <Content>
+                <Section title="Minhas Notas">
+                    <Note data={{
+                        title: 'React' , 
+                        tags: [
+                            {id: '1' , name:'react'},
+                            {id: '2' , name:'rocketseat'},
+                              ]
+                        }} 
+                    />
+                </Section>
+            </Content>
 
             <NewNote>
                 <FiPlus />
