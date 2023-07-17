@@ -1,6 +1,8 @@
 import { Header } from '../../components/header';
 import { Input } from '../../components/input';
 import { Textarea } from '../../components/TextArea';
+import { NoteItem } from '../../components/NoteItem';
+import { Section} from '../../components/section';
 
 
 
@@ -18,7 +20,13 @@ export function New() {
                         <a href='/'>Voltar</a>
                     </header>
             <Input placeholder='Titulo'/> 
-            <Textarea placeholder='Observações'/>  
+            <Textarea placeholder='Observações'/> 
+
+            <Section title='Links úteis'>
+                <NoteItem value='https://github.com/ViniciusPilati33333' />
+                <NoteItem isNew placeholder="Novo Link"/>
+            </Section> 
+
                 </Form>
             </main>
         </Container>
