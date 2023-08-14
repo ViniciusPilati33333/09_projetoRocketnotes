@@ -1,6 +1,7 @@
 // making login interface
 import { FiMail, FiLock } from  'react-icons/fi'
 import { Link } from "react-router-dom";
+import { useAuth } from '../../hooks/auth';
 
 import { Input } from '../../components/input'
 import { Button } from '../../components/button'
@@ -8,6 +9,10 @@ import { Button } from '../../components/button'
 import { Container, Form, Background } from "./style";
 
 export function SignIn() {
+
+    const data = useAuth();
+    console.log("Meu contexto => ", data)
+
     return(
         <Container>
             <Form>
