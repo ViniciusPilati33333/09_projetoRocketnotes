@@ -13,7 +13,7 @@ function AuthProvider({children}) {
     try {
         const response = await api.post("/sessions", { email, password });
         const { user, token } = response.data;
-            api.default.headers.authorization = `Bearer ${token}`
+            api.defaults.headers.authorization = `Bearer ${token}`
             setData({ user, token })
         }
 
